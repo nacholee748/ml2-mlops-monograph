@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/jorge.morales/Documents/Personales/UdeA/Monografia/mlruns/0/1a73c39948c0491dbcc43e79588bfe4c/artifacts
+end_time: 1682388163829
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1a73c39948c0491dbcc43e79588bfe4c
+run_name: beautiful-cub-436
+run_uuid: 1a73c39948c0491dbcc43e79588bfe4c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682388148641
+status: 3
+tags: []
+user_id: jorge.morales
