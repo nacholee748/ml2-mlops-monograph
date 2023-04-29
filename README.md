@@ -44,7 +44,11 @@ ML2MLOPSMONOGRAPH/
 
 
 ## MLOps stages:
-**monographDataAdquisition/**: batch execution process. Connection to the information source to bring in raw data and store it in the Feature Store. It contains an ETL of extraction, transformation, and loading.
+
+![](MLOPS-Propouse.png)
+
+
+**ETL [./nographDataAdquisition/]**: batch execution process. Connection to the information source to bring in raw data and store it in the Feature Store. It contains an ETL of extraction, transformation, and loading.
 
 The process is a scheduled task that runs at a defined frequency.
 
@@ -53,7 +57,7 @@ python .\monographDataAdquisition\main.py
 ```
 
 
-**monographEvalperformance/**: batch and on-demand execution process, which could be programmed with N frequencies to observe model behavior and experiment with them.
+**EVAL-PERFORMANCE [./monographEvalperformance/]**: batch and on-demand execution process, which could be programmed with N frequencies to observe model behavior and experiment with them.
 
 It is implemented with the MLFlow tool, and its dashboard can be viewed with the following command:
 
@@ -62,7 +66,7 @@ cd monographEvalperformance
 mlflow ui
 ```
 
-**monographInference/**: an API is being made available on demand, which needs to be tested with the data to identify a record and send it.
+**INFERENCE [./monographInference/]**: an API is being made available on demand, which needs to be tested with the data to identify a record and send it.
 
 To start the service, run the following command:
 ```linux
@@ -96,7 +100,7 @@ BODY:
 }
 ```
 
-**monographTraining/**: an API is being made available on demand, and the model to be trained, the version, and the size of the data to be tested can be invoked.
+**TRAININT [./monographTraining/]**: an API is being made available on demand, and the model to be trained, the version, and the size of the data to be tested can be invoked.
 
 ```linux
 cd monographTraining
@@ -122,7 +126,7 @@ BODY:
 It contains a data_layer layer where the training is executed to generate a model.
 
 
-**storage/**: contains 3 base folders, data, logs, models.
+**STORAGE [./storage/]**: contains 3 base folders, data, logs, models.
 
 data: Here we will manage all the raw and processed data ready to be consumed by the models stored in the feature store.
 
